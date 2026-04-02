@@ -1,0 +1,24 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+  <defs>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color: #1B9D7D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color: #0655d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Hexagonal background with subtle gradient -->
+  <polygon points="100,25 165,62.5 165,137.5 100,175 35,137.5 35,62.5"
+    fill="url(#logo-grad)" opacity="0.1" stroke="none"/>
+
+  <!-- Clean Hexagon Border -->
+  <polygon points="100,25 165,62.5 165,137.5 100,175 35,137.5 35,62.5"
+    fill="none" stroke="url(#logo-grad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+
+
+  <!-- Bold AL Text -->
+  <text x="100" y="140" font-family="Arial, Helvetica, sans-serif" font-size="60" font-weight="900"
+    text-anchor="middle" dominant-baseline="middle" fill="url(#logo-grad)">
+    AL
+  </text>
+</svg>
