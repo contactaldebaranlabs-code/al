@@ -6,7 +6,7 @@
 /* ===== 1. VARIABLES GLOBALES ===== */
 @font-face {
     font-family: 'inter';
-    src: url('../assets/typos/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    src: url('. Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
 }
 
 :root {
