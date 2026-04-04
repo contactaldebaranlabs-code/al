@@ -101,7 +101,7 @@ body {
     background-color: var(--bg-light);
     display: flex;
     flex-direction: column;
-    overflow-x: hidden; /* Empêcher le scroll horizontal */
+    overflow-x: hidden;
 }
 
 * {
@@ -170,12 +170,12 @@ a:hover {
 }
 
 ul, ol {
-    margin-left: 20px;
+    margin-left: var(--spacing-md);
     margin-bottom: var(--spacing-md);
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: var(--spacing-xs);
 }
 
 /* ===== 4. COMPOSANTS RÉUTILISABLES ===== */
@@ -184,11 +184,11 @@ li {
 .badge {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px 20px;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--radius-full);
     font-weight: var(--font-weight-bold);
-    font-size: 0.75rem;
+    font-size: var(--font-size-sm);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -205,11 +205,11 @@ li {
 button,
 [role="button"] {
     display: inline-block;
-    padding: 12px 24px;
+    padding: var(--spacing-sm) var(--spacing-md);
     border: none;
     border-radius: var(--radius-lg);
     font-family: var(--font-family);
-    font-size: 1rem;
+    font-size: var(--font-size-base);
     font-weight: var(--font-weight-bold);
     cursor: pointer;
     transition: all var(--transition-normal);
@@ -219,7 +219,7 @@ button,
 
 .btn-header-cta {
     background: linear-gradient(135deg, var(--emerald-light), var(--cyan-light));
-    color: white;
+    color: var(--text-light);
     padding: clamp(14px, 2vw, 18px) clamp(28px, 6vw, 50px);
     border-radius: var(--radius-full);
     text-decoration: none;
@@ -241,18 +241,18 @@ button,
 
 .cta_devis {
     background: linear-gradient(135deg, var(--emerald-400), var(--cyan-400));
-    color: white;
-    padding: 14px 28px;
+    color: var(--text-light);
+    padding: var(--text-light) var(--spacing-lg);
     border: none;
     border-radius: var(--radius-full);
     font-weight: var(--font-weight-bold);
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: var(--spacing-sm);
     transition: all var(--transition-normal);
     box-shadow: 0 10px 30px rgba(46, 207, 169, 0.3);
-    font-size: 1rem;
+    font-size: var(--font-size-base);
 }
 
 .cta_devis:hover {
@@ -283,7 +283,7 @@ button,
 .card {
     background: var(--bg-white);
     border-radius: var(--radius-lg);
-    padding: 30px;
+    padding: var(--spacing-lg);
     border: 1px solid var(--slate-100);
     transition: transform var(--transition-normal), box-shadow var(--transition-normal);
     cursor: pointer;
@@ -326,13 +326,13 @@ button,
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.8rem;
-    margin-bottom: 25px;
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
     box-shadow: 0 8px 20px rgba(46, 207, 169, 0.3);
 }
 
 .service-card .service-body {
-    padding: 30px;
+    padding: var(--spacing-lg);
 }
 
 .service-bar {
@@ -348,15 +348,15 @@ button,
 
 .service-tags {
     display: flex;
-    gap: 8px;
+    gap: var(--spacing-xs);
     flex-wrap: wrap;
 }
 
 .service-tags span {
-    font-size: 0.8rem;
+    font-size: var(--font-size-sm);
     background: var(--bg-light);
     color: var(--slate-medium);
-    padding: 6px 12px;
+    padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--radius-sm);
 }
 
@@ -368,8 +368,8 @@ button,
     align-items: center;
     justify-content: center;
     color: var(--text-light);
-    font-size: 1.8rem;
-    margin-bottom: 25px;
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 .contact-title {
@@ -413,8 +413,8 @@ button,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 1.5rem;
+    color: var(--text-light);
+    font-size: var(--font-size-xl);
     flex-shrink: 0;
 }
 
