@@ -1,5 +1,5 @@
 ﻿User-agent: *
 Allow: /
-Disallow: /cgi-bin/
-Disallow: /tmp/
+
 Sitemap: https://aldebaranlabs.netlify.app/sitemap.xml
+Sitemap: https://blog-aldebaranlabs.netlify.app/sitemap.xml

@@ -15,17 +15,14 @@
     /* Émeraude (Vert) */
     --emerald-400: #2ECFA9;
     --emerald-600: #1B9D7D;
-    --emerald-900: #0F4C3A;
     
     /* Cyan (Bleu ciel) */
     --cyan-400: #0655d4;
     --cyan-600: #1535b6;
-    --cyan-900: #020C78;
     
     /* Indigo (Violet/Bleu profond) */
     --indigo-400: #733afa;
     --indigo-600: #4F46E5;
-    --indigo-900: #312E81;
     
     --text-dark: #0B1929;
     --text-light: #e7edf4;
@@ -278,6 +275,33 @@ button,
 .text-accent--cyan {
     color: var(--cyan-400);
     font-weight: var(--font-weight-semibold);
+}
+
+/* --- BREADCRUMB --- */
+.breadcrumb {
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.breadcrumb a {
+    color: var(--cyan-400);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: " / ";
+    margin-left: 10px;
+    color: var(--text-muted);
 }
 
 /* --- CARDS --- */
@@ -1167,11 +1191,36 @@ section {
     }
 }
 
-/* Note Badge */
-.note-badge {
-    color: #2ECFA9;
-    font-weight: var(--font-weight-bold);
-    margin-right: 4px;
+button:focus-visible {
+    outline: 3px solid var(--cyan-400);
+    outline-offset: 2px;
+}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+.breadcrumb ol {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.breadcrumb a {
+    color: var(--cyan-400);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: " / ";
+    margin-left: 10px;
+    color: var(--text-muted);
 }
 
 .hero-actions .btn {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="Portfolio Aldebaran Labs : réalisations sites Kinshasa, Cavihar restaurant, e-commerce RDC. Tarifs transparents $30-300. Devis gratuit." name="description"/>
+    <meta content="Portfolio Aldebaran Labs : projets réalisés pour restaurants, startups et boutiques. Sites rapides, SEO-optimisés. Voir nos réalisations." name="description"/>
     <meta content="portfolio web Kinshasa, sites réalisés RDC, cas client restaurant, Cavihar, création site Kinshasa" name="keywords"/>
     <meta content="Portfolio — Aldebaran Labs | Sites réalisés Kinshasa" property="og:title"/>
     <meta content="Voir nos projets : restaurant Cavihar, sites vitrines, e-commerce RDC. Cas d'études et résultats concrets." property="og:description"/>
@@ -15,6 +15,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
     <link as="font" crossorigin="" href="Inter/Inter-VariableFont_opsz,wght.ttf" rel="preload" type="font/ttf"/>
     <link href="index.css" rel="stylesheet"/>
+    <link rel="canonical" href="https://aldebaranlabs.netlify.app/portfolio.html"/>
     <title>
       Aldebaran Labs — portfolio
     </title>
@@ -148,7 +149,7 @@
         </section>
         <!-- SECTION : PORTFOLIO SHOWCASE -->
         <section aria-labelledby="portfolio-title" class="portfolio" id="portfolio" data-animation="InUp">
-          <h2 data-animation="fadeInUp" id="portfolio-title"  style="color: white;">
+          <h2 data-animation="InUp" id="portfolio-title"  style="color: white;">
             Notre portfolio — Exemples de nos capacités
           </h2>
           <p class="portfolio-intro" data-animation="fadeInUp" style="color: white;">
@@ -177,13 +178,16 @@
             </button>
           </div>
           <div class="projects-grid">
-              <article class="project" data-animation="fadeInUp" data-category="vitrine">
-                <div class="project-media-container">
+              <article class="project" data-animation="InUp" data-category="vitrine">
+                <div>
                   <div class="media-content active" id="media-screenshots-1">
-                    <div class="screenshot-carousel">
-                      <img alt="Restaurant Le Cavihar - Kinshasa" class="screenshot-main img-cover" loading="lazy" src="127.0.0.1_3000_clients_Restaurant_Le_Cavihar_Cavihar_site_html_index.html.png"/>
-                    </div>
-                  </div>
+                    <img alt="Aldebaran Labs" class="logo-img" src="logo-aldebaran-labs.svg" width="150" height="40"/>
+                    
+                    <picture>
+                        <source srcset="127.0.0.1_3000_clients_Restaurant_Le_Cavihar_Cavihar_site_html_index.html.png" type="image/webp">
+                        <source srcset="127.0.0.1_3000_clients_Restaurant_Le_Cavihar_Cavihar_site_html_index.html.png" type="image/png">
+                        <img src="127.0.0.1_3000_clients_Restaurant_Le_Cavihar_Cavihar_site_html_index.html.png" alt="Landing page startup" width="600" height="400" loading="lazy">
+                    </picture>
                 </div>
                 <div class="project-meta">
                   <h3>Restaurant Le Cavihar (cas client fictif)</h3>
@@ -201,9 +205,13 @@
               <article class="project" data-animation="fadeInUp" data-category="vitrine">
                 <div class="project-media-container">
                   <div class="media-content active" id="media-screenshots-2">
-                    <div class="screenshot-carousel">
-                      <img alt="La Maison - Page d'accueil" class="screenshot-main" loading="lazy" src="maison-verde.png"/>
-                    </div>
+                    <img alt="Aldebaran Labs" class="logo-img" src="logo-aldebaran-labs.svg" width="150" height="40"/>
+                    
+                    <picture>
+                        <source srcset="" type="image/webp">
+                        <source srcset="maison-verde.png" type="image/png">
+                        <img src="maison-verde.png" alt="Restaurant maison verde" width="600" height="400" loading="lazy">
+                    </picture>
                   </div>
                 </div>
                 <div class="project-meta">
@@ -222,9 +230,13 @@
               <article class="project" data-animation="fadeInUp" data-category="landing">
                 <div class="project-media-container">
                   <div class="media-content active" id="media-screenshots-3">
-                    <div class="screenshot-carousel">
-                      <img alt="Landing FinTech" class="screenshot-main img-cover" loading="lazy" src="landing-page.png"/>
-                    </div>
+                    <img alt="Aldebaran Labs" class="logo-img" src="logo-aldebaran-labs.svg" width="150" height="40"/>
+                    
+                    <picture>
+                        <source srcset="landing-page.png" type="image/webp">
+                        <source srcset="landing-page.png" type="image/png">
+                        <img src="landing-page.png" alt="Landing page startup" width="600" height="400" loading="lazy">
+                    </picture>
                   </div>
                 </div>
                 <div class="project-meta">
@@ -243,9 +255,13 @@
               <article class="project" data-animation="fadeInUp" data-category="ecommerce">
                 <div class="project-media-container">
                   <div class="media-content active" id="media-screenshots-4">
-                    <div class="screenshot-carousel">
-                      <img alt="E-commerce — lancement bientôt" class="screenshot-main img-cover" loading="lazy" src="cody-shop.netlify.app_.png"/>
-                    </div>
+                    <img alt="Aldebaran Labs" class="logo-img" src="logo-aldebaran-labs.svg" width="150" height="40"/>
+                    
+                    <picture>
+                        <source srcset="cody-shop.netlify.app_.png" type="image/webp">
+                        <source srcset="cody-shop.netlify.app_.png" type="image/png">
+                        <img src="cody-shop.netlify.app_.png" alt="codyshop boutique en ligne" width="600" height="400" loading="lazy">
+                    </picture>
                   </div>
                 </div>
                 <div class="project-meta">
@@ -305,6 +321,7 @@
             Contact
           </a>
         </li>
+        <li><a href="privacy.html">Confidentialité</a></li>
         <li>
           <a href="https://blog-aldebaranlabs.netlify.app">
             <span>
